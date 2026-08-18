@@ -1,44 +1,59 @@
-# Dirty Coffee Shop - Sales Analytics Dashboard
+☕ Dirty Coffee Shop - Sales Analysis Dashboard
+📌 Project Overview
+<img width="1312" height="729" alt="Untitled sales 1" src="https://github.com/user-attachments/assets/4215f1e9-7ae5-4f7d-92ee-2e34374512f0" />
 
-An interactive Power BI dashboard tracking sales performance, order volume, and customer purchasing behavior for **Dirty Coffee Shop**. This project provides actionable data insights by analyzing revenue across fulfillment locations, product categories, payment methods, and monthly performance trends.
+This project provides a comprehensive end-to-end sales performance analysis for a coffee shop chain using raw data sourced from Kaggle. The raw data was processed, cleaned, and transformed to uncover key business metrics, customer purchasing behaviors, and operational trends across various locations and sales channels.
 
----
+🛠️ Project Workflow & Tools Used
+1. Data Extraction & Cleaning (Power Query)
+Data Source: Raw sales dataset extracted from Kaggle ("Dirty Coffee Shop Sales").
 
----## 🔑 Key Insights & Dashboard
-<img width="1312" height="743" alt="Dirty Cafe Sales Dataset" src="https://github.com/user-attachments/assets/2235ac96-32d5-476e-9580-d8d9d5cf2c8e" />
+Power Query Transformations:
 
----
+Cleaned missing values, duplicates, and standardized data types across columns.
 
+Handled missing attributes by categorizing unidentified records as UNKNOWN.
 
-## 📊 Executive Summary
+Created structured custom columns for date dimensions, quarters, and months for dynamic filtering.
 
-* **Total Revenue:** $84.72K
-* **Total Units Sold:** 29K
-* **Total Order Requests:** 9K
-* **Average Transaction Value:** $9
+2. Data Modeling & DAX Measures (Power BI)
+Developed key business indicators (KPIs) using custom DAX calculations:
 
----
+Total Transactions: 9K requests analyzed.
 
-## 🔑 Key Insights & Dashboard Highlights
+Total Sales Volume: 29K items sold.
 
-* **Top Revenue Drivers:** Salads ($16.5K) and Sandwiches ($13.0K) generate the highest sales revenue, outperforming beverage categories like Tea ($4.6K) and Coffee ($6.8K).
-* **Payment Distribution:** Revenue is evenly split across payment methods, including Cash ($19.49K), Credit Card ($19.51K), Digital Wallets ($19.44K), and UNKNOWN ($26.28K).
-* **Fulfillment Channels:** Measures order request volume across **In-store**, **Takeaway**, and **UNKNOWN** fulfillment types across all product categories.
-* **Monthly Sales Trends:** Identifies seasonal revenue fluctuations throughout the calendar year, reaching a peak in June ($7,350) and a low in February ($6,626).
+Total Revenue Generated: $84.723K.
 
----
+Average Transaction Value: $9 per order.
 
-## 🛠️ Built With
+3. Interactive Dashboard Design
+Built an interactive and cohesive dashboard featuring custom dynamic visuals:
 
-* **Power BI Desktop** - Data visualization and dashboard construction
-* **DAX** - Data Analysis Expressions for calculated metrics
-* **Power Query** - Data transformation and cleaning
+KPI Summary Cards: Quick insight into total requests, units sold, total revenue, and average transaction value.
 
----
+Requests by Location: Visualized distribution across In-store, Takeaway, and UNKNOWN locations using pie chart breakdown.
 
-## 📂 Project Structure
+Revenue by Payment Method: Funnel analysis across Digital Wallet, Cash, Credit Card, and UNKNOWN channels.
 
-```text
-├── dirty_cafe_sales.pbix    # Main Power BI Report File
-├── data/                    # Source datasets (CSV/Excel)
-└── screenshots/             # Visual preview assets
+Top-Selling Items: Horizontal bar chart highlighting dynamic product performance (led by Salads, Sandwiches, and Smoothies).
+
+Monthly Revenue Trends: Line chart depicting sales performance and seasonality from January to December.
+
+Product vs. Location Analysis: Clustered column chart comparing item sales volume across operational locations.
+
+📊 Key Insights
+Top Revenue Drivers: Food items such as Salads ($16.5K) and Sandwiches ($13.0K) outperformed traditional beverage sales in total revenue.
+
+Sales Seasonality: Peak sales spikes occurred during June ($7,350) and October ($7,295).
+
+Payment Diversity: Digital Wallets ($19.51K), Cash ($19.49K), and Credit Cards ($19.44K) hold an almost equal distribution in customer payment preferences.
+
+🚀 How to View the Project
+Clone this repository:
+
+Bash
+git clone https://github.com/YourUsername/Coffee-Shop-Sales-Analysis.git
+Open the .pbix file using Power BI Desktop.
+
+Interact with slicers (Location, Quarter/Month) to filter data dynamically.
